@@ -15,7 +15,7 @@ int n = 0;
 void readGraph1() {
     fstream fi;
     int num;
-    fi.open("C:\\Users\\PHUOC THAO\\source\\repos\\graph\\Debug\\graph1.txt", ios::in);
+    fi.open("graph1.txt", ios::in);
     fi >> n;
     for (int i = 0; i < n; i++)
     {
