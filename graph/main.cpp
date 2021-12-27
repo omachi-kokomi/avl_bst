@@ -32,7 +32,7 @@ void readGraph1() {
 void readGraph2() {
     fstream fi;
     int num;
-    fi.open("C:\\Users\\PHUOC THAO\\source\\repos\\graph\\Debug\\graph2.txt", ios::in);
+    fi.open("graph2.txt", ios::in);
     fi >> n;
     fi.ignore();
     for (int i = 0; i < n; i++)
@@ -67,7 +67,7 @@ void printGraph2(vector<int> a[], int N) {
 
 void writeGraph1(vector<vector<int>> Mat, int N) {
     fstream fo;
-    fo.open("C:\\Users\\PHUOC THAO\\source\\repos\\graph\\Debug\\graph1.txt", ios::out);
+    fo.open("graph1.txt", ios::out);
     fo << N << endl;
     for (int i = 0; i < N; i++)
     {
@@ -81,7 +81,7 @@ void writeGraph1(vector<vector<int>> Mat, int N) {
 
 void writeGraph2(vector<int> Graph[], int N) {
     fstream fo;
-    fo.open("C:\\Users\\PHUOC THAO\\source\\repos\\graph\\Debug\\graph2.txt", ios::out);
+    fo.open("graph2.txt", ios::out);
     fo << N << endl;
     for (int i = 0; i < N; i++)
     {
@@ -459,27 +459,27 @@ int main() {
     printGraph(mat);
     writeGraph1(mat, n);
     cout << "Directed Graph: " << isDirectedGraph() << endl;
-    cout << "Number of edges: " << countEdges() << endl;
-    cout << "Number of vertices" << countVertices() << endl;
-    degreeOfEachVertex();
-    cout << "isolated vertices: ";
-    vector<int> isolated = isolated_vectices();
-    for (int i = 0; i < isolated.size(); i++) cout << isolated[i] << " ";
-    cout << "\nleaf vertices: ";
-    vector<int> leaf = leaf_vertices();
-    for (int i = 0; i < leaf.size(); i++) cout << leaf[i] << " ";
-    cout << endl;
-    cout << "Complete graph: " << isCompleteGraph() << endl;
-    cout << "Circular graph: " << isCircularGraph() << endl;
-    cout << "Bigraph: " << isBigraph() << endl;
+    // cout << "Number of edges: " << countEdges() << endl;
+    // cout << "Number of vertices" << countVertices() << endl;
+    // degreeOfEachVertex();
+    // cout << "isolated vertices: ";
+    // vector<int> isolated = isolated_vectices();
+    // for (int i = 0; i < isolated.size(); i++) cout << isolated[i] << " ";
+    // cout << "\nleaf vertices: ";
+    // vector<int> leaf = leaf_vertices();
+    // for (int i = 0; i < leaf.size(); i++) cout << leaf[i] << " ";
+    // cout << endl;
+    // cout << "Complete graph: " << isCompleteGraph() << endl;
+    // cout << "Circular graph: " << isCircularGraph() << endl;
+    // cout << "Bigraph: " << isBigraph() << endl;
     cout << "Complete bigraph: " << isCompleteBiGraph() << endl;
-    cout << "connected component: " << countConnectComponents(graph, n) << endl;
-    cout << "connected component which the number of trees is: " << countConnectComponents_which_are_trees() << endl;
-    cout << "number of cut vertices: " << countCutVertices() << endl;
-    cout << "number of bridge edge: " << countBridgeEdges() << endl;
-    cout << "complement graph: \n";
-    vector<vector<int>> complementGraph = generate_complement_undirected_graph();
-    printGraph(complementGraph);
+    // cout << "connected component: " << countConnectComponents(graph, n) << endl;
+    // cout << "connected component which the number of trees is: " << countConnectComponents_which_are_trees() << endl;
+    // cout << "number of cut vertices: " << countCutVertices() << endl;
+    // cout << "number of bridge edge: " << countBridgeEdges() << endl;
+    // cout << "complement graph: \n";
+    // vector<vector<int>> complementGraph = generate_complement_undirected_graph();
+    // printGraph(complementGraph);
 
     /*vector<vector<int>> baseGraph = generate_base_undirected_graph();
     cout << "Base Undirected Graph:\n";
